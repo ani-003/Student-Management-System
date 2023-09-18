@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./login-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script src="./login-script.js" type=""></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div class="container" id="login-container">
+        <div class="box">
+            <div class="uname">
+                <label for="username">USERNAME</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="password">
+                <label for="password"> PASSWORD</label>
+                <input type="password" name="password" id="password">
+
+            </div>
+            <div class="register">
+
+                <button id="sign-in-btn"> SIGN-IN</button>
+                <button style="background-color: rgb(245, 125, 13);" id="register-btn-login"> REGISTER</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="container1" style="display: none;" id="registration-container">
+        <form action="">
+            <div class="personal-det">
+                <div class="name">
+                    <div class="finame">
+                        <label for="fname"> <B>FIRST NAME:</B></label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                    
+                    <div class="laname">
+                        <label for="lname"> <B>LAST NAME:</B></label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                </div>
+                
+                <div class="contact">
+                <div class="num">
+                    <label for="number"> <B>PHONE NUMBER:</B></label>
+                    <input type="number" name="number" id="number">
+                </div>
+             
+                <div class="email">
+                    <label for="email"> <B>EMAIL:</B></label>
+                    <input type="text" name="email" id="email">
+                </div>
+            </div>
+              
+                <div class="dob">
+                    <label for="dob"> <B>DATE OF BIRTH:</B></label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+              
+                <div class="gender">
+                    <label for="">
+                        <H4> <B> GENDER:</B></H4>
+                    </label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male"> male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female"> female</label>
+                    <input type="radio" value="other" id="other" name="gender">
+                    <label for="other"> other</label>
+                </div>
+
+                <textarea name="address" id="" cols="40" rows="4"> enter your current address</textarea>
+            </div>
+           
+            <label for="course"><b>
+                    <h4> CHOOSE A COURSE</h4>
+                </b></label>
+            <select name="course" id="course">
+                <option value="course"> course</option>
+                <option value="BCA">BCA </option>
+                <option value="B.TECH"> B.TECH</option>
+                <option value="BBA">BBA </option>
+                <option value="B.PHARMA">B.PHARMA </option>
+                <option value="LLB"> LLB</option>
+            </select>
+         
+            
+            <Br>
+            <br>
+            <label for="college"> <B> ENTER YOUR COLLEG NAME:</B></label>
+
+            <input type="text" name="college" id="college">
+            <BR>
+            <BR>
+            <label for="year"> <b>ENTER YOUR OF STUDY:</b></label>
+            <input type="text" name="year" id="year">
+            <BR>
+            <BR>
+            <label for="jisu"> <b>ENTER YOUR JISU ID:</b></label>
+            <input type="text" name="jisu" id="jisu" placeholder="JISU/2022/0999" required>
+            <BR>
+            <BR>
+            <label for="password"><B> CREATE A PASSWORD:</B></label>
+            <input type="password" name="password" id="password">
+            <br>
+            <br>
+            <label for="re-password"> <B>CONFIRM YOUR PASSWORD:</B></label>
+            <input type="password" name="re-password" id="re-password">
+            <BR>
+            <BR>
+            <button id="register-btn-registration"> REGISTER </button>
+            <button id="back-to-login-btn">Back to Login</button>
+
+
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
