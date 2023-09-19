@@ -40,8 +40,7 @@ body {
     left: 10%;
     height: auto;
     width: auto;
-    border: 2px solid #FFF; /* White border */
-    background-color: #444; /* Dark background color */
+    
 }
 
 .uname, .password {
@@ -72,6 +71,24 @@ body {
     cursor: pointer; /* Change cursor on hover */
     transition: transform 0.3s;
     margin-top: 10px;
+}
+
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 60px;
+    height: 25px;
+    background-image: url('./bliss.png');
+    background-size: cover;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+  
+
+.form{
+    border: 2px solid #FFF; /* White border */
+    background-color:#555/* Dark background color */
 }
 
 .register button:hover {
