@@ -146,6 +146,7 @@ body {
     cursor: pointer; /* Change cursor on hover */
     transition: transform 0.3s;
     margin-top: 10px;
+    
 }
 
 #registration-container.slide-in {
