@@ -7,12 +7,12 @@ body {
 
 .container {
     position: fixed;
-    top: 50%;
+    top: 20%;
     right: 10%;
     transform: translate(0%, -50%);
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    justify-content: center;
+    justify-content: space-evenly; /* Evenly distribute elements vertically */
     align-items: center;
     width: 20%; /* Adjust the width as needed */
     max-width: 700px; /* Set a maximum width for responsiveness */
@@ -21,7 +21,12 @@ body {
     padding: 20px;
     height: 50%;
     
+    transition: transform 0.5s, opacity 0.5s;
+   
+   transform: translate(0%);
+   opacity: 1;
 }
+
 .personal-det{
     display: grid;
     grid-template-columns: repeat(1, 1fr); /* Create 3 equal columns */
@@ -36,12 +41,11 @@ body {
 }
 
 .container1{
-    top: 10%;
-    left: 10%;
+    
     height: auto;
-    width: auto;
-    border: 2px solid #FFF; /* White border */
-    background-color: #444; /* Dark background color */
+    width: 34%;
+    
+    
 }
 
 .uname, .password {
@@ -74,6 +78,85 @@ body {
     margin-top: 10px;
 }
 
+.logo {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 60px;
+    height: 25px;
+    background-image: url('./bliss.png');
+    background-size: cover;
+    transition: transform 0.3s ease;
+    display: block;
+  }
+  
+
+.form{
+
+    background-color:#181717;/* Dark background color */
+    margin: 15px;
+    align-items: center;
+
+}
+
+.form-cont{
+    margin: 15px;
+    border: 1px;
+    border-color: #FFF;
+    top: 50%;
+    left: 10%;
+    align-items: center;
+    
+}
+
 .register button:hover {
     transform: scale(1.1);
 }
+
+.buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    margin-top: 15px;
+}
+
+.buttons button {
+    background-color: rgb(169, 46, 252);
+    color: #FFF;
+    width: 95%;
+    padding: 10px 0; /* Adjust vertical padding to center the button */
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.buttons button:hover{
+    background-color: #2980B9; /* Change the background color on hover */
+    
+}
+
+#back-to-login-btn button{
+
+    
+    color: #FFF; /* White button text */
+    width: 40%;
+    padding: 5px 10px; /* Increase padding for better button size */
+    border: none; /* Remove button borders if desired */
+    cursor: pointer; /* Change cursor on hover */
+    transition: transform 0.3s;
+    margin-top: 10px;
+}
+
+#registration-container.slide-in {
+    transform: translate(0%);
+    display: block;
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+ }
+ 
+ #login-container.slide-out {
+    transform: translate(100%);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+ }
